@@ -1,0 +1,48 @@
+//declaração de variaveis 
+byte ledA  = 2;
+byte ledB  = 4;
+byte ledC  = 6;
+byte ledD  = 12;
+byte ledE  = 10;
+int botao = 8;
+int estado =0;
+
+// inicialiazção das variaveis 
+
+void  setup (){
+   pinMode(ledA, OUTPUT);
+   pinMode(ledB, OUTPUT);
+   pinMode(ledC, OUTPUT);
+   pinMode(ledD,OUTPUT);
+   pinMode(ledE,OUTPUT);
+   pinMode(botao,INPUT);
+
+   
+}
+  //Instruçoes
+void loop () {
+  estado = digitalRead(botao); //0 ou 1 
+  
+  if(estado == 1) {
+   digitalWrite(ledA,1); //high
+  delay(1000);
+  digitalWrite(ledA,0); //low
+   delay(1000);
+ 
+  digitalWrite(ledB,1); //high
+  delay(1000);
+  digitalWrite(ledB,0); //low
+  delay(1000);
+ 
+  digitalWrite(ledC,1); //high
+  delay(1000);
+  digitalWrite(ledC,0); //low
+  delay(1000);
+   
+      
+}
+  else {
+
+   
+}
+}
